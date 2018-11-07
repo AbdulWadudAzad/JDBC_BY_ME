@@ -1,0 +1,64 @@
+Enter password: ****
+
+mysql> show databases
+    -> ;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| test               |
++--------------------+
+4 rows in set (0.00 sec)
+
+mysql> USE TEST;                                           //USE TEST DATADASE
+Database changed
+
+mysql> create table ttt (id int(3), name varchar(20));     //CREATE TABLE
+Query OK, 0 rows affected (0.33 sec)
+
+mysql> show tables;                                         //Table show
++----------------+
+| Tables_in_test |
++----------------+
+| ttt            |
++----------------+
+1 row in set (0.00 sec)
+
+mysql> insert into ttt(id,name) values(2,'Lalbager kella');    //insert data into table
+Query OK, 1 row affected (0.03 sec)
+
+mysql> insert into ttt(id,name) values(3,'Ahsan manzil');
+Query OK, 1 row affected (0.02 sec)
+
+mysql> select * from ttt;                                       // show data of table
++------+----------------+
+| id   | name           |
++------+----------------+
+|    2 | Lalbager kella |
+|    3 | Ahsan manzil   |
++------+----------------+
+2 rows in set (0.00 sec)
+
+
+                             
+mysql> create database bangladesh;								 // create database
+Query OK, 1 row affected (0.11 sec)
+
+mysql> show databases;  										// show database
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| bangladesh         |
+| mysql              |
+| performance_schema |
+| test               |
++--------------------+
+5 rows in set (0.00 sec)
+
+
+update division set name='Borisal' where id=1  ;                 //Update data in Table
+
+delete from division where id=1;								// Delete data from Table
