@@ -33,6 +33,7 @@ public class Login extends javax.swing.JFrame {
         txtPassword = new javax.swing.JTextField();
         txtUserName1 = new javax.swing.JTextField();
         btnSignIn = new javax.swing.JButton();
+        btnSignIn1 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
 
@@ -60,14 +61,16 @@ public class Login extends javax.swing.JFrame {
         txtUserName1.setBounds(630, 430, 190, 20);
 
         btnSignIn.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        btnSignIn.setText("Sign In");
+        btnSignIn.setText("Sign Up");
         jPanel1.add(btnSignIn);
-        btnSignIn.setBounds(640, 510, 90, 25);
+        btnSignIn.setBounds(730, 510, 90, 25);
+
+        btnSignIn1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btnSignIn1.setText("Sign In");
+        jPanel1.add(btnSignIn1);
+        btnSignIn1.setBounds(630, 510, 90, 25);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/Login.png"))); // NOI18N
-        jLabel1.setMaximumSize(new java.awt.Dimension(1360, 768));
-        jLabel1.setMinimumSize(new java.awt.Dimension(1360, 768));
-        jLabel1.setPreferredSize(new java.awt.Dimension(1360, 768));
         jPanel1.add(jLabel1);
         jLabel1.setBounds(-1630, -600, 1360, 768);
 
@@ -126,6 +129,7 @@ public class Login extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnSignIn;
+    private javax.swing.JButton btnSignIn1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
